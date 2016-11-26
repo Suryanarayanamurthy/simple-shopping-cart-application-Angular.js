@@ -1,1 +1,42 @@
-<p>This is the partial for view 1.</p>
+<div type="pills">
+<uib-tabset>
+<uib-tab ng-repeat = "product in productsSet.products">
+	<uib-tab-heading>
+	<ul class="nav nav-pills">
+	<li>{{product.productname}}</li>
+	<li>{{product.cost}}</li>		
+	</ul>
+	</uib-tab-heading>
+	<ul>
+		<li ng-repeat="superImpFeature in product.description.superImpFeatures">
+			superImpFeature
+		</li>
+	</ul>
+	<ul>
+		<li ng-repeat="impFeature in product.description.impFeatures">
+			impFeature
+		</li>
+	</ul>
+	<ul>
+		<li ng-repeat="product.description.norFeatures"></li>
+	</ul>	
+	<button ng-click="addToCart(product)">Add to cart</button>
+</uib-tab>
+</uib-tabset>
+</div>
+<div ng-repeat ="item in cart.items">
+<div class="row">
+	<div class="col">
+		<button ng-click="addQty()">+</button>
+	</div>
+	<input type="number" name="">
+	<div class="col">
+		<button ng-click="removeQty()">-</button>
+	</div>
+</div>
+</div>
+<div class="row">
+	<div>
+		{{total()}}
+	</div>
+</div>
