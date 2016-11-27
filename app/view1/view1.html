@@ -4,7 +4,7 @@
 	<uib-tab-heading class="transclude productHeading">
 	<ul class="nav" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}">
 	<li>{{product.productname}}</li>
-	<li>{{product.cost}}</li>		
+	<li>{{product.cost}} €</li>		
 	</ul>
 	</uib-tab-heading>
 	<div class="centerDiv">
@@ -32,24 +32,36 @@
 </uib-tab>
 </uib-tabset>
 </div>
-<div class="cartList">
-<div ng-repeat ="item in cart.items">
+<div class="cartList container" ng-show="cart.items.length > 0">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Details</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr ng-repeat ="item in cart.items">
+        <td>{{item.productname}}</td>
+        <td>{{item.description.superImpFeatures[0]}}</td>
+        <td>
+        <button ng-click="addQty(item)">+</button>
+        <input type="number" ng-model="item.qty">
+        <button ng-click="removeQty(item)">-</button>
+        </td>
+        <td>{{item.qty * item.cost}}</td>
+        <td>
+        [<a href ng:click="removeItem($index)">X</a>]
+        </td>
+      </tr>
+    </tbody>
+  </table>
 <div class="row">
-	<div class="col">
-		<button ng-click="addQty(item)">+</button>
-	</div>
-	<input type="number" name="" ng-model="item.qty">
-	<div class="col">
-		<button ng-click="removeQty(item)">-</button>
-	</div>
-	<div class="col">
-		<button ng-click="removeItem($index)">X</button>
-	</div>
-</div>
-</div>
-<div class="row">
-	<div>
-		{{total()}}
+	<div class="-col-md-4">
+		Total: {{total()}} €
 	</div>
 </div>
 </div>
