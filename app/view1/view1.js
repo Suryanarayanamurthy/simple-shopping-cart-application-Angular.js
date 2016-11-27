@@ -95,7 +95,7 @@ angular.module('myApp.view1', ['ngRoute'])
 				"There are over 5000 species of smartfrogs",
 				"SmartFrogs don’t need to drink water as they absorb it through their skin.",
 				"A Smartfrog’s call(communitation protocol) is unique to its species(product type), and some Smartfrog's calls can be heard up to a mile away.",
-				"In Egypt the frog is the symbol of life and fertility, and in Egyptian mythology Heget is a frog-goddess who represents fertility.;-)"
+				"In Egypt the frog is the symbol of life and fertility, and in Egyptian mythology Heget is a frog-goddess who represents fertility.(ur very welcome ;-))"
 				],
 				norFeatures: [
 				"Some frogs can jump over 20 times their own body length; that is like a you jumping 30m.",
