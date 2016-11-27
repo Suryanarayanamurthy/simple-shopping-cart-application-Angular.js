@@ -11,7 +11,7 @@
 	<ul class="superImpFeatures">
 		<li ng-repeat="superImpFeature in product.description.superImpFeatures">
 			{{superImpFeature}}
-			<span class="glyphicon glyphicon-plus orangeColor"></span> 
+			<span ng-hide="product.description.superImpFeatures.length == $index + 1" class="glyphicon glyphicon-plus orangeColor"></span> 
 		</li>
 	</ul>
 	</div>
