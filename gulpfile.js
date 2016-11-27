@@ -2,12 +2,12 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 var config = {
-    bootstrapDir: './bower_components/bootstrap-sass',
+    bootstrapDir: './app/bower_components/bootstrap-sass',
     publicDir: './app/public',
 };
 
 gulp.task('css', function() {
-    return gulp.src('./app/css/app.scss')
+    return gulp.src('./css/app.scss')
     .pipe(sass({
         includePaths: [config.bootstrapDir + '/assets/stylesheets'],
     }))
