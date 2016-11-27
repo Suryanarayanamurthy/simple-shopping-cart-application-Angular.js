@@ -12,12 +12,13 @@ input::-webkit-inner-spin-button {
 	margin: 10px;
 
 }
-.nav-tabs{
+.nav-tabs > li.active > a {
 	color: #fff;
-	background-color: #337777;
+	background-color: #337ab7;
 }
-.nav-tabs:active{
-background-color: #000;	
+.nav-tabs > li > a {
+ 	color: #fff;
+	background-color: #98bfe4;
 }
 ul{
 	list-style: none; /* Remove list bullets */    
@@ -35,8 +36,7 @@ background-color:#f18713;
 
  div.centerDiv {
         width: 100%;
-        text-align: center;
-        border: 1px solid red;
+        text-align: center;        
     }
     ul.superImpFeatures {
         margin: 2px auto;
@@ -47,5 +47,6 @@ background-color:#f18713;
         display: inline;
         text-align: center;
     }
+
 
 
