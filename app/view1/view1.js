@@ -77,10 +77,7 @@ angular.module('myApp.view1', ['ngRoute'])
 				"Important Feature 33"
 				],
 				norFeatures: [
-				"Normal Feature 31",
-				"Normal Feature 32",
-				"Normal Feature 33",
-				"Normal Feature 34"
+				"Normal Feature 31"
 				]
 			}
 		},
@@ -91,20 +88,23 @@ angular.module('myApp.view1', ['ngRoute'])
 			description:{
 				superImpFeatures:[
 				"Scans for bugs",
-				"can Jump 4 times it's height",
 				"360 degree cam rotation",
 				"water proof..."
 				],
 				impFeatures:[
-				"Important Feature 41",
-				"Important Feature 42",
-				"Important Feature 43"
+				"There are over 5000 species of smartfrogs",
+				"SmartFrogs don’t need to drink water as they absorb it through their skin.",
+				"A Smartfrog’s call(communitation protocol) is unique to its species(product type), and some Smartfrog's calls can be heard up to a mile away.",
+				"In Egypt the frog is the symbol of life and fertility, and in Egyptian mythology Heget is a frog-goddess who represents fertility.;-)"
 				],
 				norFeatures: [
-				"Normal Feature 41",
-				"Normal Feature 42",
-				"Normal Feature 43",
-				"Normal Feature 44"
+				"Some frogs can jump over 20 times their own body length; that is like a you jumping 30m.",
+				"Many species of frog care for their offspring.",
+				"Females of some frog species keep a regular check on their offspring (tadpoles) and if food becomes scarce she will deposit unfertilised eggs for them to eat.",
+				,
+				"Since Pictish times, the (smart)frogs has been considered lucky in Scotland. This is why stone frogs are commonly kept in gardens and often given as housewarming gifts.",
+				"these are excellent biological indicators of the wider health of ecosystems.",
+				"Asian tree frogs build nests in trees above water so that when the tadpoles hatch they fall directly into the water."
 				]
 			}
 		}
