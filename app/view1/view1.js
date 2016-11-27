@@ -1,3 +1,4 @@
+
 'use strict';
 
 angular.module('myApp.view1', ['ngRoute'])
@@ -19,6 +20,11 @@ angular.module('myApp.view1', ['ngRoute'])
 			cost: 10,
 			qty:1,
 			description:{
+				superImpFeatures:[
+				"super Imp Feature 1",
+				"super Imp Feature 2",
+				"super Imp Feature 3"
+				],
 				impFeatures:[
 				"Important Feature 1",
 				"Important Feature 2",
@@ -37,6 +43,11 @@ angular.module('myApp.view1', ['ngRoute'])
 			cost: 10,
 			qty:1,
 			description:{
+				superImpFeatures:[
+				"super Imp Feature 1",
+				"super Imp Feature 2",
+				"super Imp Feature 3"
+				],
 				impFeatures:[
 				"Important Feature 21",
 				"Important Feature 22",
@@ -55,6 +66,11 @@ angular.module('myApp.view1', ['ngRoute'])
 			cost: 10,
 			qty:1,
 			description:{
+				superImpFeatures:[
+				"super Imp Feature 1",
+				"super Imp Feature 2",
+				"super Imp Feature 3"
+				],
 				impFeatures:[
 				"Important Feature 31",
 				"Important Feature 32",
@@ -73,6 +89,11 @@ angular.module('myApp.view1', ['ngRoute'])
 			cost: 10,
 			qty:1,
 			description:{
+				superImpFeatures:[
+				"super Imp Feature 1",
+				"super Imp Feature 2",
+				"super Imp Feature 3"
+				],
 				impFeatures:[
 				"Important Feature 41",
 				"Important Feature 42",
@@ -117,11 +138,11 @@ $scope.addToCart = function(item){
             description: '',
             cost: 0
         });
-    },
+    }
 
     $scope.removeItem = function(index) {
-        $scope.invoice.items.splice(index, 1);
-    },
+        $scope.cart.items.splice(index, 1);
+    }
 
     $scope.total = function() {
         var total = 0;
@@ -130,5 +151,14 @@ $scope.addToCart = function(item){
         })
 
         return total;
+    }
+
+    $scope.addQty = function(item){
+    	item.qty ++;
+    }
+    $scope.removeQty = function(item){
+    	item.qty --;
+    	if (item.qty <= 0)
+    		item.qty = 1;
     }
 }]);

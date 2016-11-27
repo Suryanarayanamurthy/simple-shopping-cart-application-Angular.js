@@ -9,29 +9,35 @@
 	</uib-tab-heading>
 	<ul>
 		<li ng-repeat="superImpFeature in product.description.superImpFeatures">
-			superImpFeature
+			{{superImpFeature}}
 		</li>
 	</ul>
 	<ul>
 		<li ng-repeat="impFeature in product.description.impFeatures">
-			impFeature
+			{{impFeature}}
 		</li>
 	</ul>
 	<ul>
-		<li ng-repeat="product.description.norFeatures"></li>
+		<li ng-repeat="norFeature in product.description.norFeatures">
+		{{norFeature}}
+		</li>
 	</ul>	
 	<button ng-click="addToCart(product)">Add to cart</button>
 </uib-tab>
 </uib-tabset>
 </div>
+<div style="padding-left: 20px">
 <div ng-repeat ="item in cart.items">
 <div class="row">
 	<div class="col">
-		<button ng-click="addQty()">+</button>
+		<button ng-click="addQty(item)">+</button>
 	</div>
-	<input type="number" name="">
+	<input type="number" name="" ng-model="item.qty">
 	<div class="col">
-		<button ng-click="removeQty()">-</button>
+		<button ng-click="removeQty(item)">-</button>
+	</div>
+	<div class="col">
+		<button ng-click="removeItem($index)">X</button>
 	</div>
 </div>
 </div>
@@ -39,4 +45,5 @@
 	<div>
 		{{total()}}
 	</div>
+</div>
 </div>
