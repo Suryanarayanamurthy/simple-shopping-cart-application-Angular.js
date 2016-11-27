@@ -7,3 +7,45 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+.productsSet{
+	margin: 10px;
+
+}
+.nav-tabs{
+	color: #fff;
+	background-color: #337777;
+}
+.nav-tabs:active{
+background-color: #000;	
+}
+ul{
+	list-style: none; /* Remove list bullets */    
+}
+.whiteColor{
+	color: #fff;
+}
+.orangeColor{
+	color: #f18713;
+}
+.impFeatures{
+background-color:#f18713;
+
+}
+
+ div.centerDiv {
+        width: 100%;
+        text-align: center;
+        border: 1px solid red;
+    }
+    ul.superImpFeatures {
+        margin: 2px auto;
+        line-height: 1.4;
+        padding-left: 0;
+    }
+    .superImpFeatures li {
+        display: inline;
+        text-align: center;
+    }
+
+

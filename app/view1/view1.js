@@ -21,9 +21,9 @@ angular.module('myApp.view1', ['ngRoute'])
 			qty:1,
 			description:{
 				superImpFeatures:[
-				"super Imp Feature 1",
-				"super Imp Feature 2",
-				"super Imp Feature 3"
+				"smartfrog app",
+				"smartfrog HD cam",
+				"24 hour recording"
 				],
 				impFeatures:[
 				"Important Feature 1",
@@ -131,14 +131,6 @@ $scope.addToCart = function(item){
     }
     return false;
 }
-
-    $scope.addItem = function() {
-        $scope.invoice.items.push({
-            qty: 1,
-            description: '',
-            cost: 0
-        });
-    }
 
     $scope.removeItem = function(index) {
         $scope.cart.items.splice(index, 1);
