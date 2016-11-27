@@ -6281,6 +6281,9 @@ input::-webkit-inner-spin-button {
 .productsSet {
   margin: 10px; }
 
+.cartList {
+  margin: 30px; }
+
 .nav-tabs > li.active > a {
   color: #fff;
   background-color: #337ab7; }

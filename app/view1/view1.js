@@ -16,7 +16,7 @@ angular.module('myApp.view1', ['ngRoute'])
 	{
 		products: [
 		{
-			productname:"smartfrog cam 1",
+			productname:"Complete Solution",
 			cost: 10,
 			qty:1,
 			description:{
@@ -39,7 +39,7 @@ angular.module('myApp.view1', ['ngRoute'])
 			}
 		},
 		{
-			productname:"smartfrog cam 2",
+			productname:"Cam Package",
 			cost: 10,
 			qty:1,
 			description:{
@@ -62,7 +62,7 @@ angular.module('myApp.view1', ['ngRoute'])
 			}
 		},
 		{
-			productname:"smartfrog cam 3",
+			productname:"Smart Sol",
 			cost: 10,
 			qty:1,
 			description:{
@@ -85,14 +85,15 @@ angular.module('myApp.view1', ['ngRoute'])
 			}
 		},
 		{
-			productname:"smartfrog cam 4",
-			cost: 10,
+			productname:"Frog Solution",
+			cost: 100,
 			qty:1,
 			description:{
 				superImpFeatures:[
-				"super Imp Feature 1",
-				"super Imp Feature 2",
-				"super Imp Feature 3"
+				"Scans for bugs",
+				"can Jump 4 times it's height",
+				"360 degree cam rotation",
+				"water proof..."
 				],
 				impFeatures:[
 				"Important Feature 41",

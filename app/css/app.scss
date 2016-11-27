@@ -8,10 +8,15 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.productsSet{
+.productsSet {
 	margin: 10px;
 
 }
+
+.cartList{
+	margin:30px;
+}
+
 .nav-tabs > li.active > a {
 	color: #fff;
 	background-color: #337ab7;
